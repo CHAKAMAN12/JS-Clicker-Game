@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+
+p {
+    font-size: 24px;
+}
+body {
+    font-family: 'Bungee+Spice', sans-serif;
+}
+
+.gmilk {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    text-align: center;
+    margin-left: 600px;
+    margin-top: 100px;
+}
+
+.button {
+    background-color: blue;
+    border: 3px solid yellow;
+    color: white;
+    border-radius: 30px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.sbutton {
+    width: 10%;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    background-color: darkred;
+    border: 3px solid red;
+    color: white;
+    border-radius: 30px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    position: absolute;
+}
+
+.mini {
+    font-size: small;
+}
+
+.btn {
+    padding: 10px 20px;
+    background: #000;
+    border: 3px solid yellow;
+    outline: none;
+    cursor: pointer;
+    font-size: 22px;
+    color: #fff;
+    border-radius: 30px;
+}
+
+.popup {
+    width: 400px;
+    background: cyan;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.open-popup {
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+}
+
+.popup img{
+    width: 169px;
+    height: 169px;
+    margin-top: -50px;
+}
+
+.popup h1{
+    font-size: 50px;
+    margin-top: -10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.popup button{
+    width: 40%;
+    padding: 10px 0;
+    background: #6fd649;
+    color: yellow;
+    outline: auto;
+    outline-color: #fff;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.bpop {
+    width: 400px;
+    background: cyan;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    outline: auto;
+    outline-color: #000;
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.open-bp {
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+}
+
+.bpop h1{
+    font-size: 50px;
+    margin-top: -3px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.bpop button{
+    width: 25%;
+    padding: 10px 0;
+    background: #6fd649;
+    color: yellow;
+    outline: auto;
+    outline-color: #fff;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+body {
+    background: #fff;
+}
+
+.ipop {
+    width: 400px;
+    background: cyan;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    outline: auto;
+    outline-color: #000;
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.open-ip {
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+}
+
+.ipop h1{
+    font-size: 50px;
+    margin-top: -3px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.ipop p{
+    font-size: 18px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.ipop button{
+    width: 25%;
+    padding: 10px 0;
+    background: #6fd649;
+    color: yellow;
+    outline: auto;
+    outline-color: #fff;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.vers {
+    margin-top: 235px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.locky {
+    margin-top: 10px;
+    margin-bottom: -265px;
+    margin-left: -60px;
+}
+
+body, ::backdrop {
+    background: #fff;
+}
+#fullscreen-button {
+    position: absolute;
+    top:  15px;
+    right:  15px;
+    border:  0;
+    width:  40px;
+    height:  40px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    transition:  transform .3s;
+    cursor:  pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 690px;
+}
+#fullscreen-button:hover {
+    transform: scale(1.125);
+}
+#fullscreen-button svg:nth-child(2) { 
+    display: none;
+}
+[fullscreen] #fullscreen-button svg:nth-child(1) {
+    display: none;
+}
+[fullscreen] #fullscreen-button svg:nth-child(2) {
+    display: inline-block;
+}
