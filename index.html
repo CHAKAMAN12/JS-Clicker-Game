@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Clicker</title>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@beta/dist/js.cookie.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body onload="updatecount()">
+
+<img class="gmilk" src="/images/happy.png">
+
+<div class="popup" id="popup">
+    <img src="/images/think.png">
+    <h1>Settings</h1>
+    <button onclick="openBp()">Background</button>
+    <button onclick="openIp()">Info</button>
+    <br>
+    <br>
+    <button onclick="closePopup()">DONE!</button>
+</div>
+
+<div class="bpop" id="bpop">
+    <h1>Background</h1>
+    <button id="crb" onclick="changeR()">Red</button>
+    <button onclick="changeG()">Grey</button>
+    <button onclick="changeW()">White</button>
+    <button onclick="changeP()">Purple</button>
+    <br>
+    <br>
+    <br>
+    <button onclick="closeBp()">Back</button>
+</div>
+
+<div class="ipop" id="ipop">
+    <h1>Info</h1>
+    <p>This Turns CPS & CPC On Or Off</p>
+    <button id="turnoff" onclick="turnOff()">Off</button>
+    <button id="turnon" onclick="turnOn()" disabled>On</button>
+    <br>
+    <br>
+    <br>
+    <button onclick="closeIp()">Back</button>
+</div>
+
+<p id="clickcount">Clicks: 0</p>
+
+<audio id="audio" src="/scripts/music/gametheme.mp3"></audio>
+
+<button onclick="startgame(), audio.play();" id="sBut" class="sbutton">Start Game</button>
+<button onclick="add()" id="aBut" disabled class="button">Click Me</button>
+<button onclick="sub()" id="mBut" disabled class="button">Buy Cursor</button>
+<button onclick="dbl()" id="dBut" disabled class="button">Upgrade Mouse</button>
+
+<p id="cps-text" class="mini">CPS: 0</p>
+<p id="cpc-text" class="mini">CPC: 1</p>
+<br>
+<br>
+
+<button id="stBut" type="button" class="btn" onclick="openPopup()" disabled>Settings</button>
+<br>
+<p id="cursorPriceText"></p>
+<p id="upText"></p>
+<p id="facText"></p>
+<br>
+
+<script src="scripts/main.js"></script>
+<script src="scripts/init.js"></script>
+<p>Made By CONNOR</p>
+<p>[NOTE: NO SAVES... YET!]</p>
+<br>
+<a href="https://www.youtube.com/@BlooDrenched_YT/videos">MY YT CHANNEL!</a>
+
+<img class="locky" src="/images/lockOn.png">
+<p id="vers" class="vers">v. 0.5.5</p>
+
+
+</body>
+</html>
+
+
